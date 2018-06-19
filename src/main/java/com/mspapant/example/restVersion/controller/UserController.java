@@ -1,5 +1,6 @@
 package com.mspapant.example.restVersion.controller;
 
+import com.mspapant.example.restVersion.conf.annotation.Versionable;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.stereotype.Controller;
@@ -14,6 +15,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
  */
 @Controller
 @Api(value = "user", description = "Operations about users")
+@Versionable(apiContext = "api")
 public class UserController {
 
     /**
